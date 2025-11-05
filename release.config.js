@@ -21,7 +21,7 @@ module.exports = {
 	  template,
 	  partials: { commitTemplate },
 	  issueResolution: {
-	    template: '{baseUrl}/{owner}/{repo}/issues/{ref}'
+	    template: '{baseUrl}/{owner}/{repo}/issues/{ref}',
 	    baseUrl: 'https://github.com',
 	    source: 'github',
 	  }
