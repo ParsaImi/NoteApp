@@ -7,6 +7,28 @@ module.exports = {
 
   plugins: [
     [
+	'semantic-release-gitmoji', {
+		releaseRules: {
+		   major: [ ':boom:' ],
+		   minor: [ ':sparkles:' ],
+		   patch: [
+		    ':bug:',
+		    ':ambulance:',
+		    ':lock:'
+		   ]
+        },
+	releaseNotes: {
+	  template,
+	  partials: { commitTemplate },
+	  issueResolution: {
+	    template: '{baseUrl}/{owner}/{repo}/issues/{ref}'
+	    baseUrl: 'https://github.com',
+	    source: 'github',
+	  }
+	}
+     }
+    ],
+    [
      '@semantic-release/commit-analyzer',  // Analyzes commits for version bump
      {
      	preset: 'angular',
@@ -24,7 +46,7 @@ module.exports = {
     [
         '@semantic-release/release-notes-generator',  // Generates release notes
 	{
-	  "preset": "conventional-changelog-emoji",
+	  "preset": "emoji",
 	},
     ],
     [
