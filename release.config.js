@@ -15,7 +15,7 @@ module.exports = {
 	  { type: 'refactor', release: 'patch' },
 	  { type: 'style', release: 'patch' },
 	  { breaking: true, release: 'patch' },
-	]
+	],
 	"parserOpts": {
 	  "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
 	}
