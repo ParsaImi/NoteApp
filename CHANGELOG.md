@@ -1,3 +1,10 @@
+## [1.0.1](https:/home/parsaimani/projects/Notes-Application//compare/v1.0.0...v1.0.1) (2025-11-05)
+
+
+### Bug Fixes
+
+* route fixed ([f0a9860](https:/home/parsaimani/projects/Notes-Application//commit/f0a98607c8d9a84e41ad9bb09fbc7abcf6788be6))
+
 # 1.0.0 (2025-11-05)
 
 
