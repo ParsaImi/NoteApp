@@ -24,7 +24,7 @@ module.exports = {
     [
         '@semantic-release/release-notes-generator',  // Generates release notes
 	{
-	  "preset": "emoji",
+	  "preset": "conventional-changelog-emoji",
 	},
     ],
     [
