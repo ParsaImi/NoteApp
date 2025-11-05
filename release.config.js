@@ -1,3 +1,8 @@
+const { promisify } = require('util')
+const readFileAsync = promisify(require('fs').readFile)
+
+const template = readFileAsync(path.join(TEMPLATE_DIR, 'default-template.hbs'))
+const commitTemplate = readFileAsync(path.join(TEMPLATE_DIR, 'commit-template.hbs'))
 module.exports = {
   branches: ['main'],  // Only release from main (adjust if using 'master' or others)
   repositoryUrl: 'file://' + __dirname + '/.git',  // Points to your local Git repo to bypass remote origin checks
