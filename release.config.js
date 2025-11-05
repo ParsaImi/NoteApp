@@ -1,4 +1,5 @@
 const { promisify } = require('util')
+const path = require('path')
 const readFileAsync = promisify(require('fs').readFile)
 
 const template = readFileAsync(path.join(TEMPLATE_DIR, 'default-template.hbs'))
