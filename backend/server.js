@@ -95,5 +95,5 @@ app.delete('/home/:id', async (req, res) => {
 
 const PORT = 2029;
 app.listen(PORT, () => {
-    console.log(`listening on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
