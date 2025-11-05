@@ -1,0 +1,6 @@
+projectKey=ParsaImi_type-speed_826a239a-2316-4935-b78b-064e19486e18
+serverUrl=http://127.0.0.1:9001
+serverVersion=25.10.0.114319
+dashboardUrl=http://127.0.0.1:9001/dashboard?id=ParsaImi_type-speed_826a239a-2316-4935-b78b-064e19486e18
+ceTaskId=7df9045e-5865-476b-9ea7-7ee3af5b16ac
+ceTaskUrl=http://127.0.0.1:9001/api/ce/task?id=7df9045e-5865-476b-9ea7-7ee3af5b16ac

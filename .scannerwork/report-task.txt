@@ -1,0 +1,6 @@
+projectKey=ParsaImi_Dockerized-NoteApplication_26851bee-754e-4062-8808-905597189c2d
+serverUrl=http://localhost:9001
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9001/dashboard?id=ParsaImi_Dockerized-NoteApplication_26851bee-754e-4062-8808-905597189c2d
+ceTaskId=632627b4-b000-476a-94d4-07ade9b16f69
+ceTaskUrl=http://localhost:9001/api/ce/task?id=632627b4-b000-476a-94d4-07ade9b16f69

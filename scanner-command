@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sonar-scanner \
+  -Dsonar.projectKey=ParsaImi_Dockerized-NoteApplication_26851bee-754e-4062-8808-905597189c2d \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://localhost:9001 \
+  -Dsonar.token=sqp_aa317da114153df4cb67c30aaf089da14adf3767
