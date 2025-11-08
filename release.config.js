@@ -1,7 +1,6 @@
 module.exports = {
   branches: ['main'],  // Only release from main (adjust if using 'master' or others)
-  repositoryUrl: 'file://' + __dirname + '/.git',  // Points to your local Git repo to bypass remote origin checks
-  ci: false,  // Explicitly disable CI mode for local runs (equivalent to --no-ci flag)
+  ci: true,  // Explicitly disable CI mode for local runs (equivalent to --no-ci flag)
   dryRun: false,  // Set to true if you want dry-run baked in; otherwise use CLI flag
 
   plugins: [
