@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/ParsaImi/NoteApp/compare/v1.1.1...v1.2.0) (2025-11-08)
+
+
+### Features
+
+* emojis adde ([6043fa5](https://github.com/ParsaImi/NoteApp/commit/6043fa534022eaa3e06629a6ee7bb9f5f319ef34))
+
 ## [1.1.1](https://github.com/ParsaImi/NoteApp/compare/v1.1.0...v1.1.1) (2025-11-08)
 
 
