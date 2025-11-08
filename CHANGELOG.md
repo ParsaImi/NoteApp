@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ParsaImi/NoteApp/compare/v1.2.0...v1.3.0) (2025-11-08)
+
+
+### Features
+
+* release config updated ([77f6689](https://github.com/ParsaImi/NoteApp/commit/77f668987c269eeae13e4a34c4d7678118dcede3))
+
 # [1.2.0](https://github.com/ParsaImi/NoteApp/compare/v1.1.1...v1.2.0) (2025-11-08)
 
 
