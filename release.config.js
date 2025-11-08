@@ -6,6 +6,24 @@ module.exports = {
   plugins: [
     '@semantic-release/commit-analyzer',  // Analyzes commits for version bump
     '@semantic-release/release-notes-generator',  // Generates release notes
+    {
+      preset: 'conventionalcommits',
+      presetConfig: {
+        types: [
+          { type: 'feat', section: '✨ Features' },
+	  { type: 'fix', section: '🐛 Bug Fixes' },
+          { type: 'perf', section: '⚡ Performance' },
+          { type: 'revert', section: '⏪ Reverts' },
+          { type: 'docs', section: '📚 Documentation' },
+          { type: 'style', section: '💄 Styles' },
+          { type: 'refactor', section: '♻️ Code Refactoring' },
+          { type: 'test', section: '✅ Tests' },
+          { type: 'build', section: '📦 Build' },
+          { type: 'ci', section: '👷 CI/CD' },
+          { type: 'chore', section: '🔧 Chores', hidden: false },
+	  ],
+      },
+    },
     [
       '@semantic-release/changelog',
       {
