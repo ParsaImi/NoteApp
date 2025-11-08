@@ -12,7 +12,7 @@ module.exports = {
         types: [
           { type: 'feat', section: '✨ Features' },
 	  { type: 'fix', section: '🐛 Bug Fixes' },
-          { type: 'perf', section: '⚡ Performance' },
+          { type: 'perf', section: '⚡Performance' },
           { type: 'revert', section: '⏪ Reverts' },
           { type: 'docs', section: '📚 Documentation' },
           { type: 'style', section: '💄 Styles' },
