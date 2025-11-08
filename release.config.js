@@ -16,7 +16,7 @@ module.exports = {
           { type: 'revert', section: '⏪ Reverts' },
           { type: 'docs', section: '📚 Documentation' },
           { type: 'style', section: '💄 Styles' },
-          { type: 'refactor', section: '♻️ Code Refactoring' },
+          { type: 'refactor', section: '♻️Refactoring' },
           { type: 'test', section: '✅ Tests' },
           { type: 'build', section: '📦 Build' },
           { type: 'ci', section: '👷 CI/CD' },
