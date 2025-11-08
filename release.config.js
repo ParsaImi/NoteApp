@@ -1,60 +1,12 @@
-const { promisify } = require('util')
-const path = require('path')
-const readFileAsync = promisify(require('fs').readFile)
-
-const template = readFileAsync(path.join(TEMPLATE_DIR, 'default-template.hbs'))
-const commitTemplate = readFileAsync(path.join(TEMPLATE_DIR, 'commit-template.hbs'))
 module.exports = {
   branches: ['main'],  // Only release from main (adjust if using 'master' or others)
   repositoryUrl: 'file://' + __dirname + '/.git',  // Points to your local Git repo to bypass remote origin checks
   ci: false,  // Explicitly disable CI mode for local runs (equivalent to --no-ci flag)
   dryRun: false,  // Set to true if you want dry-run baked in; otherwise use CLI flag
-  tagFormat: `v${'${version}'}`,  // Format of the git tag (e.g., v1.0.0)
 
   plugins: [
-    [
-	'semantic-release-gitmoji', {
-		releaseRules: {
-		   major: [ ':boom:' ],
-		   minor: [ ':sparkles:' ],
-		   patch: [
-		    ':bug:',
-		    ':ambulance:',
-		    ':lock:'
-		   ]
-        },
-	releaseNotes: {
-	  template,
-	  partials: { commitTemplate },
-	  issueResolution: {
-	    template: '{baseUrl}/{owner}/{repo}/issues/{ref}',
-	    baseUrl: 'https://github.com',
-	    source: 'github',
-	  }
-	}
-     }
-    ],
-    [
-     '@semantic-release/commit-analyzer',  // Analyzes commits for version bump
-     {
-     	preset: 'angular',
-	releaseRules: [
-	  { type: 'docs', release: false },
-	  { type: 'refactor', release: 'patch' },
-	  { type: 'style', release: 'patch' },
-	  { breaking: true, release: 'patch' },
-	],
-	"parserOpts": {
-	  "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-	}
-     }
-    ],
-    [
-        '@semantic-release/release-notes-generator',  // Generates release notes
-	{
-	  "preset": "emoji",
-	},
-    ],
+    '@semantic-release/commit-analyzer',  // Analyzes commits for version bump
+    '@semantic-release/release-notes-generator',  // Generates release notes
     [
       '@semantic-release/changelog',
       {
